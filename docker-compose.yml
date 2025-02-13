@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: meu-projeto-ecommerce
+    ports:
+      - "8081:8081"  # Mapeia a porta 9090 do contêiner para a máquina
+    volumes:
+      - .:/app  # Sincroniza os arquivos entre a máquina local e o contêiner
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev  # Define o perfil de execução (caso tenha)
+    networks:
+      - minha-rede
+
+networks:
+  minha-rede:
+    driver: bridge
