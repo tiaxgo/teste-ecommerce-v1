@@ -12,9 +12,9 @@ public class OpenAPIConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API de Documentação de Produtos")
+                        .title("API Integração com DB e BE")
                         .version("1.0.0")
-                        .description("API para Atividade Prática 06 DESCOMPLICA. Feita para gerenciar PRODUTOS, com Endpoints de CRUD.")
+                        .description("API para comunicação ECOMMERCE. Feita para gerenciar PRODUTOS, com Endpoints de CRUD.")
                 );
     }
 }
