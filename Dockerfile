@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copia todos os arquivos do projeto para dentro do contêiner
-COPY . .
+COPY . /app
 
 # Expõe a porta que o Spring Boot usará
 EXPOSE 8081
